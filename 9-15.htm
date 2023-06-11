@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CH9_15</title>    
+    <style>
+    @media screen and (min-width: 320px){
+        #container{
+           width: 800px; height: 300px;
+           padding: 0px;
+           margin: 10px auto; 
+        }        
+        #header{
+            height: 50px;
+            color: white;
+            background-color: #FF9797;
+            font-size: 24px; text-align: center;
+            line-height: 50px;
+        }
+        #main {
+            width:60%; height: 100%;
+            color: white;
+            background-color: #8600FF;
+            font-size: 24px; text-align: center;
+            line-height: 300px;
+            float: left;
+        }
+        #sidebar{
+            width:40%; height: 100%;
+            color: white;
+            background-color: #00E3E3;
+            font-size: 24px; text-align: center;
+            line-height: 300px;
+            float: left;
+        }
+        #footer{
+            height: 50px;            
+            color: white;
+            background-color: #FF8EFF;
+            font-size: 24px; text-align: center;
+            line-height: 50px;        
+            clear: both;
+        }        
+    }
+    @media screen and (max-width: 319px){
+        #container{
+           width: 300px;
+           padding: 0px;
+           margin: 10px auto; 
+        }        
+        #header{
+            height: 50px;
+            color: white;
+            background-color: darkgray;
+            font-size: 24px; text-align: center;
+            line-height: 50px;
+        }
+        #main {
+            height: 150px;
+            color: white;
+            background-color: lightgray;
+            font-size: 24px; text-align: center;
+            line-height: 150px;
+        }
+        #sidebar{
+            height: 150px;
+            color: white;
+            background-color: whitesmoke;
+            font-size: 24px; text-align: center;
+            line-height: 150px;
+        }
+        #footer{
+            height: 50px;
+            color: white;
+            background-color: darkgray;
+            font-size: 24px; text-align: center;
+            line-height: 50px;
+        }        
+    }
+
+    </style>
+</head>
+<h1 align="center" style="color: #019858;">CH9-15:媒體查詢設計RWD版面</h1>
+<body bgcolor = "#C1FFE4">
+<div id="container">
+    <div id="header">Header標頭</div>
+    <div id="main">Content內容</div>
+    <div id="sidebar">Sidebar邊欄</div>
+    <div id="footer">Footer頁腳</div>
+    <h2>媒體查詢可以隨著不同的裝置或是螢幕大小來配置適合的CSS 樣式，因此就常被應用到RWD (Responsive Web Design) 響應式網頁的設計上。</h2>
+</div>
+</body>
+
+</html>

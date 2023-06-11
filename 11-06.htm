@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<title>CH11_06</title>
+</head>
+<body style="font-size: 24px; text-align: center;" bgcolor="#BE77FF">
+	<h2 style="color: #8600FF;">CH11_06: if / else if / else 多向選擇條件控制</h2>
+	<script>
+		function resetPage() {
+			location.reload();
+		}
+			var score = prompt("請輸入分數", "0");
+			if (score >= 60 && score < 70) {
+				document.write('成績顯示:丙等');
+			} else if (score >= 70 && score < 80) {
+				document.write('成績顯示:乙等');
+			} else if (score >= 80 && score < 90) {
+				document.write('成績顯示:甲等');
+			} else if (score >= 90 && score <= 100) {
+				document.write('成績顯示:優等');
+			} else {
+				document.write('成績顯示:不及格');
+			}
+	</script>
+	<hr><button onclick="resetPage()" style="color: white; width: 200px; height: 50px; font-size: 24px; background-color: #750075">重置</button>
+</body>
+</html>

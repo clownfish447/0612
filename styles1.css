@@ -1,0 +1,85 @@
+@keyframes myanimation1 {
+    0%, 100% {background:red; right:175px; top:20px;}
+    25% {background:yellow; right:330px; top:105px;}
+    50% {background:blue; right:175px; top:210px;}
+    75% {background:green; right:30px; top:105px;}
+}
+@keyframes myanimation {
+    0%, 100% {background:red; left:10px; top:10px;}
+    25% {background:yellow; left:310px; top:10px;}
+    50% {background:blue; left:310px; top:210px;}
+    75% {background:green; left:10px; top:210px;}
+}
+@keyframes myanimation2 {
+    0%, 100% {background:red; left:10px; bottom:10px;}
+    33% {background:yellow; left:310px; bottom:10px;}
+    67% {background:green; left:10px; bottom:210px;}
+}
+@keyframes myanimation3 {
+    0%, 100% {background:red; right:10px; bottom:10px;}
+    25% {background:yellow; right:310px; bottom:10px;}
+    50% {background:blue; right:310px; bottom:210px;}
+    75% {background:green; right:10px; bottom:210px;}
+}
+
+
+.box {
+    width: 100px;
+    height: 100px;  
+    background-color: lightblue;
+    border: 1px dotted black; 
+    text-align: center;     
+    line-height: 100px; 
+    position: absolute; 
+    animation: myanimation 4s ease-in-out infinite;
+    transition: 1s width, 1s background-color 1s; 
+}
+.box:hover {
+        width: 400px;
+        background-color: yellow;
+    }
+.box1 {
+    width: 100px;
+    height: 100px;  
+    background-color: lightblue;
+    border: 1px dotted black; 
+    text-align: center;     
+    line-height: 100px; 
+    position: absolute; 
+    animation: myanimation1 4s ease-in-out infinite;
+    transform: rotate(45deg); 
+    transform-origin: center center;
+    transition: 1s width, 1s background-color 1s;
+}
+.box1:hover {
+        width: 400px;
+        background-color: yellow;
+    }
+.box1 span {
+    display: inline-block;
+    transform: rotate(-45deg);
+}
+.box2 {
+    width: 100px;
+    height: 100px;  
+    background-color: lightblue;
+    border: 1px dotted black; 
+    text-align: center;     
+    line-height: 100px; 
+    position: absolute; 
+    animation: myanimation2 4s ease-in-out infinite; 
+}
+.box3 {
+    width: 100px;
+    height: 100px;  
+    background-color: lightblue;
+    border: 1px dotted black; 
+    text-align: center;     
+    line-height: 100px; 
+    position: absolute; 
+    animation: myanimation3 4s ease-in-out infinite; 
+}
+.box3:hover{
+        animation-play-state: paused;
+    }
+
